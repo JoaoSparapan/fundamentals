@@ -14,7 +14,8 @@ transformed as (
     orderid as order_id,
     created as payment_created_at,
     status as payment_status,
-    round(amount / 100.0, 2) as payment_amount
+    {{ cents_to_dollars('amount', 4)}} as amount,
+    created as created_at
 
   from source
 
