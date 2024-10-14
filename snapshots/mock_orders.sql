@@ -20,4 +20,4 @@ select * from analytics.{{target.schema}}.mock_orders
 
 
 
-select * from analytics.dbt_joliveira_snapshot.mock_orders
+-- select * from analytics.dbt_joliveira_snapshot.mock_orders
